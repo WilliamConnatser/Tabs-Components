@@ -90,6 +90,29 @@
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
 }
+.carousel {
+  height: 400px;
+}
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background: #931d25;
+}
+.carousel-nav-button {
+  width: 50%;
+  color: #ffffff;
+  background: #931d25;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.carousel-item {
+  display: none;
+}
+.carousel-active-item {
+  display: block;
+}
 body {
   box-sizing: border-box;
   min-width: 300px;
@@ -115,12 +138,4 @@ body {
   box-shadow: 1px 1px 5px #931d25;
   border-radius: 10px;
   overflow: hidden;
-}
-.section .box {
-  padding: 40px;
-}
-.section .box .box-title {
-  font-size: 24px;
-  padding-bottom: 10px;
-  font-weight: bold;
 }

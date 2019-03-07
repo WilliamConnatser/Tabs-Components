@@ -1,0 +1,30 @@
+.carousel {
+    height: 400px;
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+
+        height: 50px;
+        background: @lambda-red;
+    }
+
+    &-nav-button {
+        width: 50%;
+
+        color: @white;
+        background: @lambda-red;
+        border: none;
+        outline: none;
+
+        cursor: pointer;
+    }
+
+    &-item {
+        display: none;
+    }
+
+    &-active-item {
+        display: block;
+    }
+}

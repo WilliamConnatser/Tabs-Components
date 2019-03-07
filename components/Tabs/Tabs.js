@@ -17,7 +17,6 @@ class Tabs {
   }
 }
 
-
 class TabLink {
   constructor(element) {
 
@@ -45,6 +44,7 @@ class TabLink {
   deselect(){
     // Remove a class named "tabs-link-selected" to this link
     this.element.classList.remove('tabs-link-selected');
+
     // Call the deselect method on the item associated with this link
     this.tabItem.deselect();
   }
@@ -75,4 +75,4 @@ class TabItem {
 
 */
 
-new Tabs()
+new Tabs();
