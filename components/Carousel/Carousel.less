@@ -1,0 +1,37 @@
+.carousel {
+    width:100%;
+    background: @lambda-red;
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+
+        height: 50px;
+        background: @lambda-red;
+    }
+
+    &-nav-button {
+        width: 50%;
+        
+        color: @white;
+        background: @lambda-red;
+        border: none;
+        outline: none;
+
+        cursor: pointer;
+    }
+
+    &-item {
+        display: none;
+        padding: 10px;
+
+        img {
+            border-radius: 7px;
+            width: 100%;
+        }
+    }
+
+    &-active-item {
+        display: block;
+    }
+}

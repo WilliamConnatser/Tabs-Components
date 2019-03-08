@@ -1,0 +1,24 @@
+{
+  "name": "tabs-components",
+  "version": "1.0.0",
+  "description": "Topics:",
+  "main": "index.html",
+  "scripts": {
+    "compile:less": "less-watch-compiler LESS CSS index.less",
+    "live-server": "live-server --no-css-inject",
+    "start": "concurrently --names \"less-compiler,live-server\" \"npm run compile:less\" \"live-server\" -k"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamConnatser/Tabs-Components.git"
+  },
+  "author": "William Connatser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilliamConnatser/Tabs-Components/issues"
+  },
+  "homepage": "https://github.com/WilliamConnatser/Tabs-Components#readme",
+  "devDependencies": {
+    "less-watch-compiler": "^1.13.0"
+  }
+}
