@@ -1,5 +1,6 @@
 .carousel {
-    height: 400px;
+    width:100%;
+    background: @lambda-red;
 
     &-nav {
         display: flex;
@@ -11,7 +12,7 @@
 
     &-nav-button {
         width: 50%;
-
+        
         color: @white;
         background: @lambda-red;
         border: none;
@@ -22,6 +23,12 @@
 
     &-item {
         display: none;
+        padding: 10px;
+
+        img {
+            border-radius: 7px;
+            width: 100%;
+        }
     }
 
     &-active-item {
